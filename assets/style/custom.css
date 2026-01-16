@@ -7221,8 +7221,18 @@ header nav li a {
 }
 
 .mouse:hover {
-  background-color: rgb(160, 2, 2);
+  background-color: rgb(160, 2, 2) !important;
   border: 1px solid rgb(160, 2, 2) !important;
+}
+
+.mouseSettings {
+  cursor: pointer;
+}
+
+.mouseSettings:hover {
+  background-color: rgb(160, 2, 2) !important;
+  border: 1px solid rgb(160, 2, 2) !important;
+  color: white !important;
 }
 
 .zoom {

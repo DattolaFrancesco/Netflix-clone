@@ -153,8 +153,16 @@ header nav li a {
   cursor: pointer;
 }
 .mouse:hover {
-  background-color: $primary;
+  background-color: $primary !important;
   border: 1px solid $primary !important;
+}
+.mouseSettings {
+  cursor: pointer;
+}
+.mouseSettings:hover {
+  background-color: $primary !important;
+  border: 1px solid $primary !important;
+  color: white !important;
 }
 .zoom {
   transition: 0.5s ease;
