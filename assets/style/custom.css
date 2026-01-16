@@ -7120,6 +7120,20 @@ header nav li a {
   }
 }
 
+.customSettingContainer {
+  margin-inline: 10%;
+}
+@media screen and (min-width: 992px) {
+  .customSettingContainer {
+    margin-inline: 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customSettingContainer {
+    margin-inline: 5%;
+  }
+}
+
 .customBgNameProfile {
   background-color: rgb(134, 133, 127);
 }
@@ -7154,6 +7168,24 @@ header nav li a {
   background-color: white;
   color: rgb(65, 63, 63);
   cursor: pointer;
+}
+
+.w-96 {
+  width: 96%;
+}
+
+.Alineamento {
+  text-align: start;
+}
+@media screen and (min-width: 576px) {
+  .Alineamento {
+    text-align: end;
+  }
+}
+
+.aLink {
+  color: rgb(0, 127, 150) !important;
+  text-decoration: none !important;
 }
 
 /*!
