@@ -1,0 +1,119 @@
+@import "../scss/functions";
+
+// color
+$primary: rgb(160, 2, 2);
+$carousel-control-color: $primary;
+$carousel-control-opacity: 0.4;
+$carousel-control-icon-width: 3rem;
+$input-bg: trasparent;
+$form-check-input-focus-box-shadow: none;
+
+@import "../scss/variables";
+
+// resto
+$new-spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 4.5,
+  8: $spacer * 5,
+  9: $spacer * 5.5,
+  10: $spacer * 6,
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+$h7-font-size: $font-size-base * 0.75;
+$h8-font-size: $font-size-base * 0.5;
+
+$new-font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+);
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+@import "../scss/maps";
+@import "../scss/mixins";
+@import "../scss/utilities";
+
+@import "./loop";
+
+@import "../scss/utilities/api";
+
+// mod
+
+// normal css
+
+header nav li a {
+  color: white !important;
+}
+.profileImg {
+  width: 50px;
+}
+#ulRight {
+  display: block !important;
+
+  @media screen and (min-width: 992px) {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+#DropDownBtn {
+  background-color: $dark;
+  border-radius: 0px;
+}
+.customContainer {
+  margin-inline: 20%;
+  @media screen and (min-width: 992px) {
+    margin-inline: 26%;
+  }
+}
+.customProfileContainer {
+  margin-inline: 10%;
+  @media screen and (min-width: 992px) {
+    margin-inline: 15%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-inline: 25%;
+  }
+}
+.customBgNameProfile {
+  background-color: rgb(134, 133, 127);
+}
+.customBgNameMaturity {
+  background-color: rgb(71, 71, 68);
+}
+.borderCustom {
+  border-bottom: 1px solid rgb(65, 63, 63);
+}
+.borderCustomTop {
+  border-top: 1px solid rgb(65, 63, 63);
+}
+.borderEditCustom {
+  border: 1px solid rgb(65, 63, 63);
+}
+.colorCustomEdit {
+  color: rgb(82, 79, 79);
+}
+.checkbox {
+  width: 1.8rem !important;
+  height: 1.8rem !important;
+  margin-right: 5px;
+}
+.hoverBtn:hover {
+  background-color: white;
+  color: rgb(65, 63, 63);
+  cursor: pointer;
+}
+
+@import "../scss/bootstrap.scss";
