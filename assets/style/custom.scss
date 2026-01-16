@@ -12,6 +12,13 @@ $dropdown-link-hover-color: $primary;
 
 @import "../scss/variables";
 
+$bg-netflix: #141414;
+
+$new-theme-colors: (
+  "bg-netflix": $bg-netflix,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
 // resto
 $new-spacers: (
   0: 0,
@@ -55,7 +62,9 @@ $font-sizes: map-merge($font-sizes, $new-font-sizes);
 // mod
 
 // normal css
-
+body {
+  background-color: $bg-netflix !important;
+}
 header nav li a {
   color: white !important;
 }
@@ -140,5 +149,17 @@ header nav li a {
   color: rgb(0, 127, 150) !important;
   text-decoration: none !important;
 }
-
+.mouse {
+  cursor: pointer;
+}
+.mouse:hover {
+  background-color: $primary;
+  border: 1px solid $primary !important;
+}
+.zoom {
+  transition: 0.5s ease;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
 @import "../scss/bootstrap.scss";
