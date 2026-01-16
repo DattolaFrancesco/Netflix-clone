@@ -168,6 +168,12 @@ header nav li a {
   transition: 0.5s ease;
 }
 .zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+  @media screen and (min-width: 576px) {
+    transform: scale(1.2);
+  }
+  @media screen and (min-width: 992px) {
+    transform: scale(1.5);
+  }
 }
 @import "../scss/bootstrap.scss";

@@ -7240,7 +7240,17 @@ header nav li a {
 }
 
 .zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+@media screen and (min-width: 576px) {
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 992px) {
+  .zoom:hover {
+    transform: scale(1.5);
+  }
 }
 
 /*!
